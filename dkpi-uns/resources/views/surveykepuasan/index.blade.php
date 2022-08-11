@@ -107,11 +107,11 @@
                 <!-- Card footer -->
                 <div class="card-footer py-4">
                     <nav aria-label="...">
-                        <!-- <div class="row">
+                        <div class="row">
                             <div class="col">
-                                <a href="{{'/mitra/create'}}" class="btn btn-primary mb-3">Tambah Data</a>
+                                <button data-toggle="modal" data-target="#pertanyaan" class="btn btn-primary mb-3">Grafik Kepuasan</button>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="row">
                             <div class="col"></div>
                             <div class="col"></div>
@@ -127,6 +127,47 @@
                         </div>
                     </nav>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="pertanyaan" tabindex="-1" role="dialog" aria-labelledby="pertanyaanTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pertanyaanTitle">Grafik Kepuasan Mitra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="table-responsive">
+                                <table class="table align-items-center table-flush">
+                                    <tbody class="list">
+                                        @foreach($penilaian_kepuasans as $penilaian_kepuasan)
+                                        <tr>
+                                            <th scope="row"><a href="#" role="button" data-toggle="popover" class="badge badge-info popover-test" title="Pertanyaan Ke-{{ $penilaian_kepuasan->id }}" data-content="{{ $penilaian_kepuasan->pertanyaan }}">Pertanyaan Ke-{{ $penilaian_kepuasan->id }}</a></th>
+                                            <td>
+                                                <div class="chart">
+                                                    <h5></h5>
+                                                    <canvas
+                                                        id="chart-q{{ $penilaian_kepuasan->id }}"
+                                                        class="chart-canvas"
+                                                    ></canvas>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

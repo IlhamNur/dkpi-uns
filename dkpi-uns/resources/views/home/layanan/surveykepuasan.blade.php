@@ -118,7 +118,7 @@
               <div class="row">
                 <div class="col-1">
                   <ol class="list-group list-group-numbered">
-                    <h3><span class="badge" style="background-color: rgba(108, 88, 179, 0.75)">{{ $keterangan -> id }}</span></h3>
+                    <h3><span class="badge" style="background-color: rgba(108, 88, 179, 0.75)">{{ $loop -> index + 1  }}</span></h3>
                   </ol>
                 </div>
                 &nbsp;<div class="col-10 mb-4" style="align-left">{{ $keterangan -> keterangan }}
@@ -134,8 +134,8 @@
                 <label class="form-label">{{ $penilaian_kepuasan -> pertanyaan }}</label><br><br>
                 @foreach($keterangans as $keterangan)
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="q{{$penilaian_kepuasan->id}}" id="{{ $keterangan -> id }}" value="{{ $keterangan ->keterangan }}">
-                  <label class="form-check-label" for="{{ $keterangan -> id }}">{{ $keterangan -> id }}</label><br><br>
+                  <input class="form-check-input" type="radio" name="q{{$penilaian_kepuasan->id}}" id="{{ $loop -> index + 1}}" value="{{ $keterangan ->keterangan }}">
+                  <label class="form-check-label" for="{{ $keterangan -> id }}">{{ $loop -> index + 1}}</label><br><br>
                 </div>
                 @endforeach
                 @error('q{{$penilaian_kepuasan->id}}')

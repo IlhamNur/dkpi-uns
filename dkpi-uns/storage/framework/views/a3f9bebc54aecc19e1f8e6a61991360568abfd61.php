@@ -251,6 +251,255 @@
                 console.error( error );
             } );
     </script>
+    <script>
+        var BarsChart = (function () {
+          var a = $("#chart-q1");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q1->count()); ?>, 
+                      <?php echo e($puases_q1->count()); ?>, 
+                      <?php echo e($sangat_puases_q1->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q2");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q2->count()); ?>, 
+                      <?php echo e($puases_q2->count()); ?>, 
+                      <?php echo e($sangat_puases_q2->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q3");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q3->count()); ?>, 
+                      <?php echo e($puases_q3->count()); ?>, 
+                      <?php echo e($sangat_puases_q3->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q4");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q4->count()); ?>, 
+                      <?php echo e($puases_q4->count()); ?>, 
+                      <?php echo e($sangat_puases_q4->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q5");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q5->count()); ?>, 
+                      <?php echo e($puases_q5->count()); ?>, 
+                      <?php echo e($sangat_puases_q5->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q6");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q6->count()); ?>, 
+                      <?php echo e($puases_q6->count()); ?>, 
+                      <?php echo e($sangat_puases_q6->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q7");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q7->count()); ?>, 
+                      <?php echo e($puases_q7->count()); ?>, 
+                      <?php echo e($sangat_puases_q7->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q8");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q8->count()); ?>, 
+                      <?php echo e($puases_q8->count()); ?>, 
+                      <?php echo e($sangat_puases_q8->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q9");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q9->count()); ?>, 
+                      <?php echo e($puases_q9->count()); ?>, 
+                      <?php echo e($sangat_puases_q9->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q10");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q10->count()); ?>, 
+                      <?php echo e($puases_q10->count()); ?>, 
+                      <?php echo e($sangat_puases_q10->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q11");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q11->count()); ?>, 
+                      <?php echo e($puases_q11->count()); ?>, 
+                      <?php echo e($sangat_puases_q11->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q12");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q12->count()); ?>, 
+                      <?php echo e($puases_q12->count()); ?>, 
+                      <?php echo e($sangat_puases_q12->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+        var BarsChart = (function () {
+          var a = $("#chart-q13");
+          a.length &&
+            (function (a) {
+              var t = new Chart(a, {
+                type: "bar",
+                data: {
+                  labels: ["Kurang Puas", "Puas", "Sangat Puas"],
+                  datasets: [{ label: "Responden", data: [
+                      <?php echo e($kurang_puases_q13->count()); ?>, 
+                      <?php echo e($puases_q13->count()); ?>, 
+                      <?php echo e($sangat_puases_q13->count()); ?>
+
+                  ] }],
+                },
+              });
+              a.data('chart', t);
+            })(a);
+        })();
+    </script>
 </body>
 
 </html>
