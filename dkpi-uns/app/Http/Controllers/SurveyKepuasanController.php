@@ -6,6 +6,8 @@ use App\Models\PenilaianKepuasan;
 use App\Models\Instansi;
 use App\Models\Kerjasama;
 use App\Models\Lingkup;
+use App\Exports\MitraSurveyExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -126,5 +128,10 @@ class SurveyKepuasanController extends Controller
 
         return redirect('/survey-kepuasan')
         ->with('success', 'Data berhasil dihapus');
+    }
+
+    public function export() 
+    {
+        return Excel::download(new MitraSurveyExport, 'Survey Kepuasan DKPI.xlsx');
     }
 }

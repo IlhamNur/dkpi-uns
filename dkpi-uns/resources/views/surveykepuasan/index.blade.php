@@ -240,10 +240,10 @@
                         </ol>
                     </nav>
                 </div>
-                <!-- <div class="col-lg-6 col-5 text-right">
-                    <a href="/mitra/create" class="btn btn-sm btn-neutral">Baru</a>
-                    <a href="#" class="btn btn-sm btn-neutral">Saring</a>
-                </div> -->
+                <div class="col-lg-6 col-5 text-right">
+                    <a href="{{ route('download') }}" class="btn btn-sm btn-neutral">Unduh Data .xlsx</a>
+                    <!-- <a href="#" class="btn btn-sm btn-neutral">Saring</a> -->
+                </div>
             </div>
         </div>
     </div>

@@ -129,6 +129,7 @@ Route::middleware('auth')->group(function () {
     //download
     Route::get('/mitra/download/mou/{id}', [MitraController::class, 'mou']);
     Route::get('/pengumuman/download/pengumuman/{id}', [PengumumanController::class, 'download']);
+    Route::get('/export', [SurveyKepuasanController::class, 'export'])->name('download');
 
 
     Route::get('/pdln/download/uns/{id}', [PdlnController::class, 'uns']);

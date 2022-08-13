@@ -42,7 +42,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
-                    <a href="/pdln/create" class="btn btn-sm btn-neutral">New</a>
+                    <a href="/pdln/create" class="btn btn-sm btn-neutral">Baru</a>
                     <!-- <a href="#" class="btn btn-sm btn-neutral">Filters</a> -->
                 </div>
             </div>
